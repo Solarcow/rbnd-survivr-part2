@@ -17,6 +17,6 @@ class Game
 		Tribe.new({name: new_name, members: @tribes[0].members + @tribes[1].members})
 	end
 	def individual_immunity_challenge
-		@tribes.sample.members.sample
+		@tribes.last.members.sample
 	end
 end
